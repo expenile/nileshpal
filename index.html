@@ -5,37 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Hamburger icon to toggle sidebar -->
+       
         <div class="sidebar">
             <img src="./assets/images/my-best.png" alt="Your Image" class="profile-img">
             <nav>
                 <ul>
-                    <li><a href="#landing" class="nav-link">Intro</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#landing" class="nav-link"><i class="fas fa-home"></i> Intro</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="content">
+        <div class="content" data-scroll-container>
             <section id="landing" class="section">
-                <div>
+                <div class="intro">
                     <h1>Hi, I am Nilesh Pal</h1>
-                </div>
-                <div>
-                    <p>An engineer</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam possimus fuga enim debitis rerum nisi excepturi similique. Nemo unde fugit quia quos ab. Quidem obcaecati fugit aliquid adipisci hic provident mollitia ratione? Aliquid eius alias voluptatem vel assumenda laudantium beatae eum harum dolore fugit!</p>
+                    <p><span class="fixed-text"></span> <span class="typing-animation"></span></p>
+                    <p>
+                        I discovered programming and got curious about technology, which led me to explore the exciting world of software development. Over time, I have honed my skills in problem-solving through Data Structures and Algorithms (DSA) and applied these concepts to real-world development projects. I am passionate about creating elegant and efficient solutions and have a keen interest in both frontend and backend development. I am eager to contribute to innovative software projects and am actively looking for opportunities in various software roles. Given the chance, I am confident that my dedication and skills will prove to be a valuable asset to any team.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://linkedin.com" class="icon-button" target="_blank">
+                            <img src="./assets/Logos/LinkedIn-Logos/linkedin.png" alt="LinkedIn" class="icon-img">
+                        </a>
+                        <a href="https://github.com" class="icon-button" target="_blank">
+                            <img src="./assets/Logos/github-mark/github-mark.png" alt="GitHub" class="icon-img">
+                        </a>
+                    </div>
+                    <div class="buttons">
+                        <a href="#about" class="button read-more"><i class="fas fa-book"></i> Read More</a>
+                        <a href="#contact" class="button contact-me"><i class="fas fa-envelope"></i> Contact Me</a>
+                    </div>
                 </div>
             </section>
-            <section id="about" class="section">About Section Content</section>
+                        
+            <section id="about" class="about-section">
+                <h2 class="about-section-header">About Me</h2>
+                <p>I'm Nilesh Pal, a final year student pursuing a Bachelor's in Information Technology with a specialization in AI and ML. I am enthusiastic and eager to contribute to team success through hard work, attention to detail, and excellent organizational skills. I have a clear understanding of C, C++, and Python, with strengths in web development.</p>
+                <p>I am keenly interested in experimental areas as well as coding and am well-versed in:</p>
+                <ul class="languages">
+                    <li><strong>Languages:</strong> Python, Java, JavaScript, C, C++ (DSA with this language), HTML/CSS</li>
+                </ul>
+                <ul class="databases">
+                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                </ul>
+                <ul class="libraries">
+                    <li><strong>Libraries:</strong> React, NumPy, Pandas, OpenCV (Still exploring more)</li>
+                </ul>
+                <ul class="frameworks">
+                    <li><strong>Frameworks:</strong> Flask, Django, Next.js, Express, Node.js, Bootstrap, Tailwind CSS</li>
+                </ul>
+                <ul class="tools">
+                    <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Heroku, JIRA, Figma, Canva, Miro, Various AI tools</li>
+                </ul>
+                <p>Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences, and personal growth.</p>
+            </section>
+            
+            
+            
             <section id="experience" class="section">Experience Section Content</section>
             <section id="projects" class="section">Projects Section Content</section>
             <section id="skills" class="section">Skills Section Content</section>

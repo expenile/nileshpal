@@ -25,11 +25,11 @@ body, html {
     align-items: center;
     position: fixed;
     height: 100%;
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .profile-img {
-    width: 50%;
+    width: 70%;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -42,7 +42,7 @@ nav ul {
 
 nav ul li {
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 10px 0;
 }
 
@@ -79,4 +79,198 @@ nav ul li a.active, nav ul li a:hover {
 
 .section:nth-child(even) {
     background-color: #bdc3c7;
+}
+
+.intro p, .intro h1 {
+    text-align: left;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon-button {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .icon-button:hover {
+    background-color: #2980b9;
+} */
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.button.read-more {
+    background-color: #2980b9;
+    color: #ecf0f1;
+}
+
+.button.read-more:hover {
+    background-color: #3498db;
+}
+
+.button.contact-me {
+    background-color: transparent;
+    color: #2980b9;
+    border: 2px solid #2980b9;
+}
+
+.button.contact-me:hover {
+    background-color: #2980b9;
+    color: #ecf0f1;
+}
+
+.about-section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #bdc3c7;
+    height: 100vh; /* Ensure the section takes the full height */
+}
+
+.about-section-header {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-section ul li strong {
+    font-weight: bold;
+}
+
+.about-section .languages,
+.about-section .databases,
+.about-section .libraries,
+.about-section .frameworks,
+.about-section .tools {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    .content {
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .content {
+        margin-left: 30%;
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 40%;
+    }
+
+    .content {
+        margin-left: 40%;
+        width: 60%;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
